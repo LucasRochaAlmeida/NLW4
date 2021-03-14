@@ -17,4 +17,14 @@ DELETE = deletar
 PATCH = alteração específica
 */
 
+//yarn dev para rodar a aplicação
+
+app.get('/', (req, res) => {
+    return res.send('Hello world')
+})
+
+app.post('/', (req, res) => {
+    return res.json({message: 'Os dados foram salvos com sucesso!'})
+})
+
 app.listen(3333, () => console.log("server is running!"))
